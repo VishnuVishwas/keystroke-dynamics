@@ -8,11 +8,11 @@ import json
 import pandas as pd
 
 # Initialize a counter to generate unique integer IDs starting from 110
-current_id = 110
+current_id = 0
 
 # random paragraphs 
 random_paragraphs = [
-   "united states"
+   "i have to be at the meeting with him, though it is not easy for me since i am uncertain."
 ]
 
 user_info = {}  # Dictionary to store user IDs mapped to usernames

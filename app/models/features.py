@@ -2,10 +2,12 @@ import csv
 import json
 import os
 
+# convert the json data to csv
 def convert_to_desired_format(input_file, output_file):
+
     # Define column headers for the output CSV
     headers = ['user']
-    for i in range(13):
+    for i in range(27): 
         headers.extend([f'press-{i}', f'release-{i}'])
 
     # Check if the output file already exists to avoid rewriting the header
@@ -32,8 +34,8 @@ def convert_to_desired_format(input_file, output_file):
                 print(f"Error decoding JSON for user {user_id}. Skipping this entry.")
                 continue
 
-            # Initialize list to store times
-            times = [''] * 26
+            # Initialize list to store time
+            times = [''] * 55
 
             # Populate press and release events
             index = 0
